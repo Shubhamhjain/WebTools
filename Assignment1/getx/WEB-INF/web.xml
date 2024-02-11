@@ -1,0 +1,10 @@
+<web-app>
+    <servlet>
+        <servlet-name>getX</servlet-name>
+        <servlet-class>GetX</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getX</servlet-name>
+        <url-pattern>/GetX</url-pattern>
+    </servlet-mapping>
+</web-app>

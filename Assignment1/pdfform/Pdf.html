@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <style>
+            h1 {
+                text-align: center;
+            }
+            h2{
+                color: crimson;
+            }
+            select{
+                margin-right: 15px;
+            }
+            input{
+                margin-right: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Tuition Waiver Form </h1>
+        <form action="Pdf" method="post" name="waiver_form">
+            <h2> Section 1 </h2>
+            Academic term: 
+            <select name="term">
+                <option value="Fall">Fall</option>
+                <option value="Winter">Winter</option>
+                <option value="Spring">Spring</option>
+                <option value="Summer">Summer</option>
+            </select>
+            Academic year: <input type="text" name="year"/>
+            Employee status:
+            <input type="radio" name="status" value="P/T Staff" />P/T Staff
+            <input type="radio" name="status" value="P/T Faculty" />P/T Faculty
+            <input type="radio" name="status" value="Retiree" />Retiree
+            <input type="radio" name="status" value="Other" />Other
+
+            <h2> Section 2 </h2>
+            Student name: <input type="text" name="sname"/>
+            Relationship to Employee: <input type="text" name="relation"/>
+            Student's NUID: <input type="text" name="snuid"/> <br/><br/>
+
+            Employee's name(if diff from student): <input type="text" name="ename"/>
+            Employee's NUID: <input type="text" name="enuid"/> <br/><br/>
+
+            Department: <input type="text" name="dept"/>
+            Campus Location: <input type="text" name="loc"/>
+            Phone Number: <input type="text" name="number"/>
+            Supervisor's name: <input type="text" name="supervisor"/> <br/><br/>
+
+            <h2> Section 3 </h2>
+            <input type="radio" name="s3" value="Undergraduate Program" />Undergraduate Program
+            <input type="radio" name="s3" value="Law School" />Law School (excludes employees)
+            <input type="radio" name="s3" value="Doctoral Candidate" /> Doctoral Candidate
+            <input type="radio" name="s3" value="CPS" />College of Professional Studies (CPS) Undergraduate
+            <input type="radio" name="s3" value="Graduate School" /> Graduate School
+            <input type="radio" name="s3" value="CPS Graduate School" /> CPS Graduate School <br/><br/>
+
+            <div>
+                <!-- Row 1 -->
+                <div style="display: inline-block; width: 15%;">Course No. </div>
+                <div style="display: inline-block; width: 15%;">Course Name </div>
+                <div style="display: inline-block; width: 20%;">Supervisor Signature</div>
+                <div style="display: inline-block; width: 15%;">Credit Hrs</div>
+                <div style="display: inline-block; width: 15%;">Day(s) </div>
+                <div style="display: inline-block; width: 15%;">Time</div><br/>
+
+                <!-- Row 2 -->
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row2_courseno"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row2_coursename"/></div>
+                <div style="display: inline-block; width: 20%;"><input type="text" name="row2_ssign"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row2_credithrs"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row2_days"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row2_time"/> am/pm</div><br/>
+
+                <!-- Row 3 -->
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row3_courseno"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row3_coursename"/></div>
+                <div style="display: inline-block; width: 20%;"><input type="text" name="row3_ssign"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row3_credithrs"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row3_days"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row3_time"/> am/pm</div><br/>
+            
+                <!-- Row 4 -->
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row4_courseno"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row4_coursename"/></div>
+                <div style="display: inline-block; width: 20%;"><input type="text" name="row4_ssign"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row4_credithrs"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row4_days"/></div>
+                <div style="display: inline-block; width: 15%;"><input type="text" name="row4_time"/> am/pm</div><br/>
+            </div>
+            <h2> Section 4 </h2>
+            Employee's signature: <input type="text" name="esign"/>
+            Date: <input type="text" name="edate"/>
+
+            <h2> Section 5 </h2>
+            HRM approval: <input type="text" name="hrmsign"/>
+            Date: <input type="text" name="hrmdate"/><br/><br/>
+
+            <input style="text-align: center;" type="submit" value="Submit" />
+
+        </form>
+    </body>
+</html>
