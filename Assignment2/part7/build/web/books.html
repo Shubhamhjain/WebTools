@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+</head>
+<body>
+    <div style="float: right;">
+        <a href="cart">View Cart</a>
+    </div>
+    <h2>Shop for Books</h2>
+    <hr>
+    <form action="cart" method="post">
+        <!-- Product details here -->
+        <label><input type="checkbox" name="item" value="book1">Java Servlet Programming [$29.95]</label><br>
+        <label><input type="checkbox" name="item" value="book2">Oracle database programming [$48.95]</label><br>
+        <label><input type="checkbox" name="item" value="book3">System Analysis and Design with UML [$14.95]</label><br>
+        <label><input type="checkbox" name="item" value="book4">Object oriented software engineering [$35.99]</label><br>
+        <label><input type="checkbox" name="item" value="book5">Java web services [$27.99]</label><br>
+
+        
+        <!-- Add more products as needed -->
+
+        <input type="hidden" name="category" value="books"> <!-- Hidden field to identify category -->
+
+        <input type="submit" value="Add to Cart">
+    </form>
+</body>
+</html>

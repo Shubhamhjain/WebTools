@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+</head>
+<body>
+    <div style="float: right;">
+        <a href="cart">View Cart</a>
+    </div>
+    <h2>Shop for CD's</h2>
+    <hr>
+    <form action="cart" method="post">
+        <!-- Product details here -->
+        <label><input type="checkbox" name="item" value="cd1">I am going to tell you a secret [$12.99]</label><br>
+        <label><input type="checkbox" name="item" value="cd2">Baby one more time [$19.95]</label><br>
+        <label><input type="checkbox" name="item" value="cd3">Calm Down [$20.95]</label><br>
+        <label><input type="checkbox" name="item" value="cd4">Loose [$13.99]</label><br>
+        <label><input type="checkbox" name="item" value="cd5">Gold Digger [$27.99]</label><br>
+
+        <input type="hidden" name="category" value="cds"> <!-- Hidden field to identify category -->
+
+        <input type="submit" value="Add to Cart">
+    </form>
+</body>
+</html>

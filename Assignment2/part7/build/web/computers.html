@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+</head>
+<body>
+    <div style="float: right;">
+        <a href="cart">View Cart</a>
+    </div>
+    <h2>Shop for Computers</h2>
+    <hr>
+    <form action="cart" method="post">
+        <!-- Product details here -->
+        <label><input type="checkbox" name="item" value="computer1">Apple Macbook Pro with 13.3" Display [$1299.99]</label><br>
+        <label><input type="checkbox" name="item" value="computer2">Asus Laptop [$949.95]</label><br>
+        <label><input type="checkbox" name="item" value="computer3">HP Pavilion [$1195.95]</label><br>
+        <label><input type="checkbox" name="item" value="computer4">Toshiba Laptop [$899.99]</label><br>
+        <label><input type="checkbox" name="item" value="computer5">Sony VAIO [$799.99]</label><br>
+
+        
+        <!-- Add more products as needed -->
+
+        <input type="hidden" name="category" value="computers"> <!-- Hidden field to identify category -->
+
+        <input type="submit" value="Add to Cart">
+    </form>
+</body>
+</html>
